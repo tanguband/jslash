@@ -1,0 +1,6 @@
+4.1.2-8 to 4.1.2-8p1
+
+* port to UNIX
+* now Monk should not eat corpses (as NH+)
+* Monk can advance martial-arts skill
+* crowning feature is defined as CROWN 

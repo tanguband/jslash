@@ -1,0 +1,23 @@
+
+    NetHack version 4.1.2-8 [beta]
+
+Options compiled into this edition:
+
+    blackmarket level, color, debug mode, Elbereth,
+    experience points on status line, fighter,
+    insurance files for recovering from crashes, Keystone Kops, log file,
+    mail daemon, news file, redo command, rogue level, score on status line,
+    screen clipping, seduction, shell command, sinks, suspend command,
+    terminal capability library, tourists, walled mazes, weapon proficiency,
+    zero-compressed save files, basic NetHack features.
+
+Supported windowing systems:
+
+    traditional tty-based graphics,
+    with a default of tty.
+
+Internal Kanji Code:
+
+    EUC
+
+

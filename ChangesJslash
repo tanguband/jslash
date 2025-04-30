@@ -1,0 +1,222 @@
+Wed Mar 29 2000		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 遅ればせながら、jslash-0.1.3 release
+
+Sun Dec 12 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* スコアファイルのY2K problemを修正
+
+Mon Nov 29 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* mondata.c:MR_HITAS*、MR_PLUS*を復活
+	* save.c:セーブ中に'.'を表示しないようにした
+
+Sun Nov 28 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* pickup.c:墓と箱が重なっている時に箱を開けられるよう修正
+	* uhitm.c:二刀流で友好的な怪物を殴ろうとした時に二回確認し
+	  ないように修正
+
+Fri Nov 26 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* allmain.c:0除算が起こる可能性がある場所を修正
+
+Wed Nov 17 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* dokick.c:祭壇を蹴った時のメッセージ修正
+
+Mon Nov 15 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* monst.c:Shelobの項目でLVLがSIZになっていたのを修正
+
+Sun Nov 8 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* pray.c:活力の石が呪われている時に祈ると落ちるバグ修正
+
+Sun Nov 8 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* jslash-0.1.2 release
+
+Sun Nov 7 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* dothrow.c:〜のオーブを投げた時に壊れるメッセージを表示。
+	* objnam.c:毒の塗られた武器に関する不具合を修正
+
+Sun Oct 31 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* quest.txt:アンデッドスレイヤーのクエストで英語が残っていたと
+	* ころをコメントアウト
+	* 矢筒に入れたアイテムを置いたり鞄に入れたりした時に(矢筒の中)
+	* のままになるのを修正(まだ不完全？)
+	* gehennom.des:ジョウビレックスレベルの降りる階段の出る範囲を
+	* jnethackと同じにした(階段が出なかったという報告があったため
+	* だが、これで直ったかどうかは不明)
+	* restore.c:セーブファイル復元中に'.'を表示しないようにした(
+	* 右にはみだしてエラーメッセージが出るのを防ぐため)
+
+Fri Oct 29 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* jtrnsobj.dat:mushroomの訳をキノコに変更
+
+Sat Oct 23 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* invent.c:getobjで数を指定して予備装備を置いた時の不具合を訂正
+
+Thu Oct 21 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* trap.c:浮いている時に落岩の罠を踏まないよう変更
+
+Tue Oct 19 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* polyself.c:ドッペルゲンガーなどで変化したとき鎧をはずしたあと
+	* それが消えないように修正
+	* shk.c:店主の物を使用した時に「〜の…を使った」の「の」が抜けて
+	* いるのを修正
+	* ガス状の胞子の爆発に関するコードの修正
+	* スコア表示をJNetHack-1.0.6.2に倣って変更
+	* dungeon.c:意味不明の pline("6"); を削除
+	* unixmain.c,pcmain.c:「ようこそSlashの世界へ」に起動時のメッセ
+        * ージを変更
+	* 二刀流でサブの武器は必ず1/3の確率で外れるように変更
+	* 攻撃の指輪は二刀流の時メインの武器のみに影響するように変更
+
+Tue Sep 21 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* objnam.c:ローブを呼んだ時「〜と呼ばれるローブ」となるよう修正
+	* 二刀流で錆の怪物を殴った時サブの武器も錆びるよう修正
+
+Sun Sep 19 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* polyself.c:予備装備のみの時変化すると落ちるバグを修正
+	* jslash-0.1.1 release
+
+Fri Sep 10 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* do_wear.c:混乱時に低能帽をかぶった時のメッセージ修正
+	* pickup.c:#lootで開ける物がない時の修正
+
+Mon Sep 6 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 二刀流を一応実装(参考:Slash'EM)
+	* 石化怪物のソースをもう少しきれいにした
+
+Sun Sep 5 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* artifact.cをシーフベーンが「@」でも装備できるよう変更
+	* questpgr.c:class_index()をデュロウが魔法使いと重ならないよう修正
+	* u_init.cの戦士のマーシャルアーツを素手に変更
+	* quest.txtを横幅が足りずはみださないように調整
+
+Sat Sep 4 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* dog.cでペットが空腹でない時同族食いをしない
+	* ようにした(参考:Slash'EM)
+	* helpをJSlashに対応させた
+
+Mon Aug 30 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* ChangesJsalshのtypoを修正
+	* 起動画面にJSlashのコピーライトを追加
+	* jslash-0.1.0 release
+
+Sat Aug 28 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* artilist.hのシーフベーンのレベルドレイン能力の付けわすれを修正
+	* artifact.cにシーフベーンの首切りを実装
+	* artilist.hのファイアダガー、(フロスト|ファイア)ブランド
+	* で付く耐性を修正
+	* レイスの死体が出るように修正(おそらくワイトとレイスを
+        * 間違っていたのでは？)
+	* jtrnsobj.datのrapierの訳をレイピアに訂正
+	* extern.hのmake_pet_minimonの宣言を修正
+	* objnam.c の #endif 0 となっていた所を #endif に修正
+	* objnam.c の unsigned char の char へのキャストし忘れを修正
+	* objnam.c でtrapとtnameを間違っているのを修正
+	* japanese/*.c で、unsigned char と char がごちゃごちゃに
+        * なっているのを修正
+	* その他こまかなfix
+
+Sun Aug 16 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 武器を外した時のメッセージのバグ修正
+
+Fri Aug 13 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* jslash-0.1.0-beta4 release
+
+Fri Jul 23 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* ヴラドが「ウラド」になっていたのを修正
+	* Slash独自の職業のクエスト日本語訳完成(Thanx to 川崎進一郎)
+
+Sun Jul 7 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 「〜の化身の〜」という敵に殺された時、死亡原因が「に殺された」
+	* になるバグの修正
+
+Sun Jul 4 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 変化に関する状態表示の修正
+	* ブービートラップがかかった扉を蹴った時のメッセージをdoorから
+	* 扉に修正
+	* 「**には至急食料が必要だ」の**の日本語化
+
+Sat Jul 3 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 石化怪物に関するソース、mhitu.cも変更完成
+	* jslash-0.1.0-beta3 release
+
+Wed Jun 30 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 和名-英名テーブル 一応完成
+	* mon.c をヴェクナの死体が出るように変更
+	* 石化怪物に関するソースを大幅に変更(mhitu.cは保留)
+
+Sun Jun 27 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* end.c,topten.cの昇天に関する所を修正
+	* end.c,topten.cの死亡原因決定に関するバグを大量に修正
+	* eat.c でPM_PYROLISKとPM_BASILISKを間違っていると思われる
+	* 箇所を修正
+	* dog.c で犬が石化する死体を食べないように修正
+	* 和名-英名テーブル モンスターだけ完成
+
+Sun Jun 20 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* sys/msdos/video.c の596行目あたりの変数名の間違いを訂正
+	* sys/msdos/vidtxt.c の320行目あたりの変数宣言の位置を訂正
+
+Thu Jun 17 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* apply.c のランプを使った時のメッセージの修正
+	* jtrnsmon.dat のgirtab、shelobの先頭を大文字にするとともに
+	* 日本語訳に「」を付けた(ユニークなモンスターだから)
+	* jtrnsmon.dat にspiderとその訳を追加(蜘蛛人間が変身する時必要)
+	* ユニークモンスターの死体を食べた時のメッセージを日本語化
+	* jtrnsobj.dat の透明の薬を不確定名と紛らわしいので
+	* 透明になる薬に変更
+
+Sat Jun 12 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* cmd.c の中で啓蒙の薬などでわかる現在の状態を修正
+	* jtrnsmon.dat に killer beetle の日本語訳追加
+	* jtrnsobj.dat の 永燃のロウソクの原語がなぜか違っていたのを
+	* 修正
+	* eat.c の缶詰の修飾語の順番がおかしいのを修正
+	* quest.txt のjnethackである職業のメッセージの日本語化
+
+Fri Jun 11 1999		Kihara Tomoyasu <habu@kmc.kyoto-u.ac.jp>
+	* 不必要なminefill.des mineend.desを削除
+	* UNIX版のMakefileを修正
+	* artifact.cの日本語訳を補完
+	* timeout.cの中にあったかならず真になるif文の修正
+	* objnam.cで英語版の「Your ..」のYourの後のスペースが残るバ
+	* グを修正
+	* stor-*.desのメッセージが英語だったのを修正
+	* jtrnsmon.dat にwightの日本語訳を追加
+	* bigroomが出ない不具合を訂正
+
+Thu Jul 1  1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	*  jslash-0.0.2 beta test starts
+
+Mon Jun 30 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* objnam.c 呪われていない，油の塗られたなどの表現を短くした．
+	*          「食べかけの」という表現を「何%食べた」に変更した．
+
+Mon Jun 23 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* artifact.c アンデットスレイヤーのクエストアーティファクト
+	* questpgr.c のソースの書き忘れを追記した．
+
+Mon Jun 16 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* global.h ROWNO を 21 から 20 に変更．
+	* 上の変更のよって起こる不具合を各ファイルの細部を変更する
+	* ことによって修正．（不完全）
+
+Thu May 20 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* pray.c 最大ヒットポイントが 1 の時何をやっても maxhp 
+	*        の上限が上がらなかったものを上限が上がるように変更．
+	* objnam.c 透明なものを願えるようにした．
+
+Wed Apr 30 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* apply.c quiver のつるはしを使った時に起こる不具合を修正．
+	* wield.c 盾を装備している時に secondweapon の両手持ち武器
+	*         を持ち替えた時に起こる不具合を修正．
+
+Thu Apr 15 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* apply.c secondweapon のつるはしを使った時に起こる不具合を修正．
+
+Sun Mar 16 1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* パッチの当たらなかった場所を手作業で当てた．
+
+Sun Mar 2  1997		Ooi Takefumi <d12014@st.pu-toyama.ac.jp>
+	* とりあえず SLASH に jnethack-1.0.3 のパッチを当てて動く
+	* ようにした．
+
+
+
